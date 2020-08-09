@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+    background: #eee;
+    font-family: "Roboto";
+}
+h1{
+    text-align: center;
+    margin: 50px;
+}
+.navegacion{
+    background: -webkit-linear-gradient(right,#1D2671,#C33764);
+    height: 60px;
+}
+.color_primario{
+    color: orange;
+}
+.cards{
+    text-align: center;
+    /* display: inline-block; */
+}
+.card{
+    background: white;
+    width:300px;
+    height:400px;
+    margin: 20px;
+    border-radius: 3px;
+   box-shadow: 0 0 20px #aaa;
+   overflow: hidden;
+   cursor: pointer;
+   display: inline-block;
+}
+.card, .card * {
+    transition: all 0.3s ease-in;
+}
+
+.zonaSuperior{
+    height: 60%;
+    position: relative;
+    
+}
+.zonaSuperior img{
+    width: 100%;
+    height: 100%;
+}
+.card__foto{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+}
+.card__fecha{
+    background-color: orange;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0.9rem;
+    padding-top: 6px;
+}
+.card__fecha small{
+    font-size: 0.6rem;
+}
+
+.zonaInferior{
+    height: 40%;
+    padding: 20px;
+    position: relative;
+}
+
+.card__subtitulo{
+    color: orange;
+    margin-top: 5px;
+}
+.card__comentarios{
+    font-size: 0.7rem;
+    color: #444;
+    position: absolute;
+    bottom: 20px;
+}
+.card__descripcion{
+    display: none;
+}
+
+.card:hover .zonaSuperior{
+    height: 40%;
+}
+.card:hover .zonaSuperior img{
+    filter: brightness(0.8);
+}
+.card:hover .zonaInferior{
+    height: 60%;
+}
+.card:hover .card__descripcion{
+    display: block;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-size: 0.8rem;
+    color: #333;
+}
+
+
+
+
+
+
